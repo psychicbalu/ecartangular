@@ -1,0 +1,8 @@
+<!-- Show header only if the current route is not 'login' -->
+<app-header *ngIf="!isLoginPage() && !isRegisterPage()"></app-header>
+
+
+<router-outlet></router-outlet>
+
+<!-- Show footer only if the current route is not 'login' -->
+<app-footer *ngIf="!isLoginPage() && !isRegisterPage()"></app-footer>
